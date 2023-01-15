@@ -3,16 +3,18 @@
 
     display: inline-block;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 21px;
     text-align: center;
     text-transform: uppercase;
     @include transition((background, opacity));
-    background: $color-gray;
-    line-height: 3rem;
+    background: $colo-primary-blue;
+    line-height: 46px;
     cursor: pointer;
 
-    @include up(md) {
+    @include up(xl) {
         width: auto;
+        padding: 0 26px;
+        line-height: 60px;
     }
 
     &:hover {

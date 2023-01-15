@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: $color-white;
     height: map-get($header-height, sm);
 
     @each $key in (md, lg, xl) {
@@ -16,12 +15,103 @@
     }
 
     &__inner {
-        @extend .container;
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        margin: 0 auto;
+        padding: 0 30px;
+
+        height: 100%;
+
+        @include up(md) {
+            max-width: 100%;
+        }
+
+        @include up(lg) {
+            padding: 0 40px;
+            max-width: 1280px;
+        }
+
+        @include up(xl) {
+            max-width: 1920px;
+        }
     }
 
+    &__logo {
+        margin-left: -18px;
+        padding: 12px 18px;
 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @include up(md) {
+            margin-left: -8px;
+            flex: 0 0 152px;
+        }
+
+        @include up(lg) {
+            margin-left: -18px;
+            margin-right: 2px;
+            flex: 0 0 135px;
+        }
+
+        @include up(xl) {
+            margin-right: 14px;
+            flex: 0 0 180px;
+        }
+    }
+
+    &__nav {
+        flex: 1;
+
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+
+        @include up(md) {
+            display: flex;
+        }
+    }
+
+    &__btn {
+        display: none;
+
+        flex: 0 0 153px;
+        margin-left: 49px;
+
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-primary-gray;
+        text-transform: initial;
+        white-space: nowrap;
+
+        border-radius: 8px;
+
+        &:hover {
+            background: $colo-primary-blue;
+        }
+
+        @include up(md) {
+            display: initial;
+        }
+
+        @include up(xl) {
+            flex: 0 0 202px;
+            font-size: 19px;
+            margin-left: 54px;
+            border-radius: 12px;
+        }
+    }
+
+    &__burger {
+        margin-left: 14px;
+        z-index: 2;
+
+        @include up(lg) {
+            display: none;
+        }
+    }
 }

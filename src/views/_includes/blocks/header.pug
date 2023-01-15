@@ -1,3 +1,59 @@
+mixin navItem(text, submenu)
+    if (submenu)
+        li.nav__item.nav__item--submenu
+            a.nav__link=text
+    else
+        li.nav__item
+            a.nav__link=text
+
 header.header
     .header__inner
-        | header
+        a.header__logo(href="/")
+            img(src="assets/img/logo.svg" alt="")
+        .header__nav
+            nav.nav.nav--services
+                ul.nav__list
+                    +navItem('Сайты')
+                    +navItem('Сервисы')
+                    +navItem('Маркетинг')
+                    +navItem('SEO')
+                    +navItem('Приложения')
+                    +navItem('Брендинг')
+                        
+            nav.nav.nav--menu
+                ul.nav__list
+                    +navItem('Кейсы')
+                    +navItem('Студия')
+                    +navItem('Блог')
+                    +navItem('Контакты')
+        
+        button.btn.header__btn Обсудить проект
+        
+        .header__burger.menu-toggler.js-menu-toggler
+            .menu-toggler__hamb
+                .menu-toggler__hamb__box
+                    span.menu-toggler__hamb__inner
+                    
+        nav.nav.nav--mobile.mobile-menu            
+            a.mobile-menu__logo(href="/")
+                +svgsprite("logo")
+                    
+            .mobile-menu__menu
+                ul.nav__list
+                    +navItem('Услуги', true)
+                    +navItem('Кейсы')
+                    +navItem('Студия')
+                    +navItem('Блог')
+                    +navItem('Контакты')
+                    
+            .mobile-menu__footer
+                .mobile-menu__footer--column
+                    p Связаяться с нами
+                    a(href="mailto:hello@riverstart.ru") hello@riverstart.ru
+                    a(href="tel:84991124621") 8 (499) 112-46-21
+                    
+                .mobile-menu__footer--column
+                    a(href="#") Facebook
+                    a(href="#") Instagram
+                    a(href="#") Behance
+                

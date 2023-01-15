@@ -14,30 +14,24 @@
         transition-duration: .15s;
         transition-timing-function: linear;
         &__box {
-            width: 19px;
-            height: 13px;
-            display: block;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 46px;
         }
         &__inner {
-            background-color: $color-text;
             display: block;
-            width: 19px;
-            height: 1px;
-            border-radius: 0;
-            position: absolute;
-            top: 50%;
-            /*margin-top: -1px;*/
+            width: 23px;
+            background-color: $color-white;
 
-            transition-duration: .1s;
-            transition-timing-function: cubic-bezier(.55,.055,.675,.19);
-            transition-property: transform;
             &:before, &:after {
                 content: "";
                 display: block;
                 background-color: inherit;
-                width: 19px;
-                height: 1px;
+                width: 23px;
+                height: 2px;
                 border-radius: 0;
                 position: absolute;
 
@@ -46,12 +40,12 @@
                 transition-timing-function: ease;
             }
             &:before {
-                top: -6px;
+                top: -5px;
 
                 transition: top .1s .14s ease,opacity .1s ease;
             }
             &:after {
-                bottom: -6px;
+                bottom: -5px;
 
                 transition: bottom .1s .14s ease,transform .1s cubic-bezier(.55,.055,.675,.19);
             }
@@ -61,6 +55,8 @@
     .body.menu-open & {
         &__hamb {
             &__inner {
+                background: #15141A;
+                height: 2px;
                 transform: rotate(45deg);
                 transition-delay: .14s;
                 transition-timing-function: cubic-bezier(.215,.61,.355,1);

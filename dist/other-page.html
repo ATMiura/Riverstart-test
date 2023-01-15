@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
-    <title>Other Page :: Frontend pack</title>
+    <title>Index :: Frontend pack</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -17,22 +17,155 @@
     <meta name="description" content="Description">
     <meta property="og:url" content="https://">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Other Page">
-    <meta property="twitter:title" content="Other Page">
+    <meta property="og:title" content="Index">
+    <meta property="twitter:title" content="Index">
     <meta property="og:description" content="description">
     <meta property="twitter:description" content="description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <body class="body">
     <header class="header">
-      <div class="header__inner">header</div>
+      <div class="header__inner"><a class="header__logo" href="/"><img src="assets/img/logo.svg" alt=""></a>
+        <div class="header__nav">
+          <nav class="nav nav--services">
+            <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link">Сайты</a></li>
+                  <li class="nav__item"><a class="nav__link">Сервисы</a></li>
+                  <li class="nav__item"><a class="nav__link">Маркетинг</a></li>
+                  <li class="nav__item"><a class="nav__link">SEO</a></li>
+                  <li class="nav__item"><a class="nav__link">Приложения</a></li>
+                  <li class="nav__item"><a class="nav__link">Брендинг</a></li>
+            </ul>
+          </nav>
+          <nav class="nav nav--menu">
+            <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link">Кейсы</a></li>
+                  <li class="nav__item"><a class="nav__link">Студия</a></li>
+                  <li class="nav__item"><a class="nav__link">Блог</a></li>
+                  <li class="nav__item"><a class="nav__link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button class="btn header__btn">Обсудить проект</button>
+        <div class="header__burger menu-toggler js-menu-toggler">
+          <div class="menu-toggler__hamb">
+            <div class="menu-toggler__hamb__box"><span class="menu-toggler__hamb__inner"></span></div>
+          </div>
+        </div>
+        <nav class="nav nav--mobile mobile-menu">           <a class="mobile-menu__logo" href="/">
+                <svg class="svgsprite _logo">
+                  <use xlink:href="assets/img/svgsprite/svgsprite.svg#logo"></use>
+                </svg></a>
+          <div class="mobile-menu__menu">
+            <ul class="nav__list">
+                  <li class="nav__item nav__item--submenu"><a class="nav__link">Услуги</a></li>
+                  <li class="nav__item"><a class="nav__link">Кейсы</a></li>
+                  <li class="nav__item"><a class="nav__link">Студия</a></li>
+                  <li class="nav__item"><a class="nav__link">Блог</a></li>
+                  <li class="nav__item"><a class="nav__link">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="mobile-menu__footer">
+            <div class="mobile-menu__footer--column">
+              <p>Связаяться с нами</p><a href="mailto:hello@riverstart.ru">hello@riverstart.ru</a><a href="tel:84991124621">8 (499) 112-46-21</a>
+            </div>
+            <div class="mobile-menu__footer--column"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Behance</a></div>
+          </div>
+        </nav>
+      </div>
     </header>
     <div class="content">
-      <div class="container"><a href="index.html">Index Page</a></div>
+      <div class="container">
+        <div class="block">
+          <ul class="demo-menu">
+            <li><a href="other-page.html">Other Page</a></li>
+            <li><span class="link js-scrollto" data-target="#scroll">Scroll</span></li>
+            <li><a href="popup.html" data-fancybox data-type="ajax">Fancy Ajax Popup</a></li>
+          </ul>
+        </div>
+        <div class="block _mb-none demo-block">
+          <pre>.block._mb-none</pre>
+        </div>
+        <div class="block demo-block">
+          <pre>.block</pre>
+        </div>
+        <div class="block"><span class="text-muted">.text-muted</span><span class="text-nowrap">.text-nowrap</span><span class="text-uppercase">.text-uppercase</span><span class="color-primary">.color-primary</span><span class="color-secondary">.color-secondary</span><a href="#">a</a><span class="link">.link</span><br><span class="demo-font">font-family-alt</span></div>
+        <div class="block">
+          <pre>i.icon-{name}</pre><span style="font-size:2rem"><i class="icon-facebook"></i><i class="icon-twitter"></i><i class="icon-instagram"></i><i class="icon-vk"></i></span>
+        </div>
+        <div class="block demo-flex">
+          <button class="btn">.btn </button>
+          <button class="btn" disabled>.btn(disabled)</button>
+          <button class="btn _primary">.btn._primary</button>
+          <button class="btn _primary" disabled>.btn._primary(disabled)</button>
+          <button class="btn _secondary">.btn._secondary</button>
+          <button class="btn _secondary" disabled>.btn._secondary(disabled)</button>
+        </div>
+        <div class="block">
+          <div class="input js-label">
+            <input>
+            <label>.input.js-label input</label>
+          </div>
+          <div class="input _error js-label">
+            <input required>
+            <label>.input._error.js-label input(required)</label>
+          </div>
+          <div class="input js-label">
+            <input disabled>
+            <label>.input.js-label input(disabled)</label>
+          </div>
+          <div class="input js-label">
+            <input class="js-mask" type="tel">
+            <label>.input.js-label input.js-mask(type="tel")</label>
+          </div>
+        </div>
+        <div class="block">
+          <pre>.bk</pre>
+          <p class="bk"><span class="bk__item"><a href="#">span.bk__item a(href="#")</a></span><span class="bk__item"><a href="#">span.bk__item a(href="#")</a></span><span class="bk__item">span.bk__item</span></p>
+        </div>
+        <div class="block">
+          <pre>+svgsprite("{name}")</pre>
+              <svg class="svgsprite _wikipedia">
+                <use xlink:href="assets/img/svgsprite/svgsprite.svg#wikipedia"></use>
+              </svg>
+              <svg class="svgsprite _track">
+                <use xlink:href="assets/img/svgsprite/svgsprite.svg#track"></use>
+              </svg>
+        </div>
+        <div class="block">
+          <pre>+pngsprite("{name}")</pre><i class="pngsprite _insta-raz"></i><i class="pngsprite _insta-dva"></i>
+        </div>
+        <div class="block" id="scroll">
+          <pre>div.rte</pre>
+          <div class="rte">
+            <h3>Title H3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas iaculis nisl, in fermentum urna scelerisque nec. Mauris enim erat, bibendum sed condimentum at, ultrices non arcu. Morbi eu sem porttitor, vulputate justo ut, fringilla turpis. Donec in elementum nunc. Cras maximus faucibus dictum. Duis sodales lacus ut eros sollicitudin tristique. Duis vitae tincidunt sem, eget ullamcorper turpis. Maecenas tristique eget leo sed sodales.</p>
+            <ul>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+            </ul>
+            <p>Vivamus risus erat, dictum vel facilisis non, consectetur id eros. Mauris pretium libero libero, quis malesuada ante eleifend nec. Vivamus massa lorem, tempus non nibh in, egestas facilisis augue. Vestibulum eleifend erat ante, et interdum lacus posuere sodales. Nam elementum dignissim nisi et pretium. Nunc tristique ipsum purus, ut rutrum leo vestibulum a. Praesent fringilla arcu orci, at faucibus ante convallis a.</p>
+            <p><img src="assets/img/lena.jpg" alt=""><img src="assets/img/transparency.png" alt=""><img src="assets/img/logo.svg" alt=""></p>
+            <ol>
+              <li>One</li>
+              <li>Two</li>
+              <li>Three</li>
+              <li>Four</li>
+            </ol>
+            <p>Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.</p>
+            <p>Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.</p>
+            <p>Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.</p>
+            <p>Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.</p>
+          </div>
+        </div>
+        <div class="block">
+          <pre>img.lazyload(data-src="assets/img/lena.jpg" src="assets/img/dot.jpg" alt="")</pre><img class="lazyload" data-src="assets/img/lena.jpg" src="assets/img/dot.jpg" alt="">
+        </div>
+      </div>
     </div>
-    <footer class="footer">
-      <div class="container">footer</div>
-    </footer>
+    <footer class="footer"></footer>
     <div class="hidden">
       <!-- include popups here-->
     </div>

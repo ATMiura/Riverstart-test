@@ -3,6 +3,7 @@ import { Fancybox } from '@fancyapps/ui'
 import Inputmask from 'inputmask'
 
 import InputLabel from './components/InputLabel'
+import MenuToggler from './components/MenuToggler'
 
 class App {
     scrollToOffset = 100
@@ -25,6 +26,7 @@ class App {
         })
 
         new InputLabel
+        new MenuToggler
 
         this.body.classList.add('_init')
     }

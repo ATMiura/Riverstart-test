@@ -1,108 +1,75 @@
 extends _includes/layout
 
-block config
-    - var pagetitle = 'Index'
-    //- использовать в крайнем случае
-    //- var bodyClass = ''
-
 block content
-    .container
-        .block
-            ul.demo-menu
-                li
-                    a(href="other-page.html") Other Page
-                li
-                    span.link.js-scrollto(data-target="#scroll") Scroll
-                li
-                    a(href="popup.html" data-fancybox data-type="ajax") Fancy Ajax Popup
-        .block._mb-none.demo-block
-            pre .block._mb-none
-        .block.demo-block
-            pre .block
-        .block 
-            span.text-muted .text-muted
-            | 
-            span.text-nowrap .text-nowrap
-            | 
-            span.text-uppercase .text-uppercase
-            | 
-            span.color-primary .color-primary
-            | 
-            span.color-secondary .color-secondary
-            | 
-            a(href="#") a
-            | 
-            span.link .link
-            | 
-            br
-            span.demo-font font-family-alt
-        .block
-            pre i.icon-{name}
-            span(style="font-size:2rem")
-                i.icon-facebook 
-                i.icon-twitter 
-                i.icon-instagram 
-                i.icon-vk 
-        .block.demo-flex
-            button.btn .btn 
-            button.btn(disabled) .btn(disabled)
-            button.btn._primary .btn._primary
-            button.btn._primary(disabled) .btn._primary(disabled)
-            button.btn._secondary .btn._secondary
-            button.btn._secondary(disabled) .btn._secondary(disabled)
-        .block
-            .input.js-label
-                input
-                label .input.js-label input
-            .input._error.js-label
-                input(required)
-                label .input._error.js-label input(required)
-            .input.js-label
-                input(disabled)
-                label .input.js-label input(disabled)
-            .input.js-label
-                input(type="tel").js-mask
-                label .input.js-label input.js-mask(type="tel")
-        .block
-            pre .bk
-            p.bk
-                span.bk__item
-                    a(href="#") span.bk__item a(href="#")
-                span.bk__item
-                    a(href="#") span.bk__item a(href="#")
-                span.bk__item span.bk__item
-        .block
-            pre +svgsprite("{name}")
-            +svgsprite("wikipedia")
-            +svgsprite("track")
-        .block
-            pre +pngsprite("{name}")
-            +pngsprite("insta-raz")
-            +pngsprite("insta-dva")
-        #scroll.block
-            pre div.rte
-            .rte
-                h3 Title H3
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas iaculis nisl, in fermentum urna scelerisque nec. Mauris enim erat, bibendum sed condimentum at, ultrices non arcu. Morbi eu sem porttitor, vulputate justo ut, fringilla turpis. Donec in elementum nunc. Cras maximus faucibus dictum. Duis sodales lacus ut eros sollicitudin tristique. Duis vitae tincidunt sem, eget ullamcorper turpis. Maecenas tristique eget leo sed sodales.
-                ul
-                    li One
-                    li Two
-                    li Three
-                    li Four
-                p Vivamus risus erat, dictum vel facilisis non, consectetur id eros. Mauris pretium libero libero, quis malesuada ante eleifend nec. Vivamus massa lorem, tempus non nibh in, egestas facilisis augue. Vestibulum eleifend erat ante, et interdum lacus posuere sodales. Nam elementum dignissim nisi et pretium. Nunc tristique ipsum purus, ut rutrum leo vestibulum a. Praesent fringilla arcu orci, at faucibus ante convallis a.
-                p 
-                    img(src="assets/img/lena.jpg" alt="")
-                    img(src="assets/img/transparency.png" alt="")
-                    img(src="assets/img/logo.svg" alt="")
-                ol
-                    li One
-                    li Two
-                    li Three
-                    li Four
-                p Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.
-                p Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.
-                p Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.
-                p Praesent accumsan ipsum a semper luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam a ex turpis. Vivamus vulputate dapibus quam, non iaculis lacus feugiat in. Nullam nec erat in orci ultricies convallis ut et nunc. Nunc risus nisl, dignissim vel ipsum sed, viverra tempus lacus. Nam ut justo at nulla fringilla finibus. Mauris vulputate mauris sit amet cursus imperdiet. Aenean finibus mattis tortor, et rhoncus risus pharetra sit amet.
-        .block
-            pre img.lazyload(data-src="assets/img/lena.jpg" src="assets/img/dot.jpg" alt="")
-            img.lazyload(data-src="assets/img/lena.jpg" src="assets/img/dot.jpg" alt="")
+    section.contacts
+        .container
+            .section__content
+                h1.section__title.contacts__title Приходите в&nbsp;гости, пишите, звоните
+                .contacts__list
+                    .contacts-item.contacts-item--phone
+                        .contacts-item__info
+                            .contacts-item__label Поговорить с нами по телефону
+                            a(href="tel:88312889354").contacts-item__link 8 (831) 2-889-354
+                        .contacts-manager
+                            .contacts-manager__photo
+                                picture
+                                    img.lazyload(src="assets/img/manager-photo.png" alt="")
+                            .contacts-manager__text
+                                .contacts-manager__message Меня зовут Ира, скорее всего вам отвечу именно я 👋
+                                .contacts-manager__info Ирина Пшеницина, аккаунт-менеджер
+                            
+                    .contacts-item.contacts-item--email
+                        .contacts-item__info
+                            .contacts-item__label Написать нам на почту
+                            a(href="mailto:hello@riverstart.ru").contacts-item__link hello@riverstart.ru
+                        
+                    .contacts-item.contacts-item--telegram
+                        .contacts-item__info
+                            .contacts-item__label Поговорить с нашим аккаунт-менеджером в Telegram
+                            a(href="https://t.me/ekhohrin").contacts-item__link @ekhohrin
+                        .contacts-item__photo
+                            picture
+                                img.lazyload(src="assets/img/manager-2-photo.png" alt="")
+
+                                
+    section.offices
+        .container
+            .offices__list
+                .offices-item.offices-item--novgorod
+                    .offices-item__photo
+                        picture
+                            source(type="image/png" media="(min-width:1800px)" data-srcset="assets/img/office-novgorod-xl.png")
+                            source(type="image/png" media="(min-width:1280px)" data-srcset="assets/img/office-novgorod-lg.png")
+                            source(type="image/png" media="(min-width:768px)"  data-srcset="assets/img/office-novgorod-md.png")
+                            img.lazyload(data-src="assets/img/office-novgorod.png" alt="")
+                    .offices-item__info
+                        .offices-item__title Нижегородский офис
+                        .offices-item__address ул. Рождественская, 26
+                        a(href="tel:88312889354").offices-item__tel 8 (831) 2-889-354
+                        .offices-item__way-point Как добраться
+                            
+                .offices-item.offices-item--moscow
+                    .offices-item__photo
+                        picture
+                            source(type="image/png" media="(min-width:1920px)" data-srcset="assets/img/office-moscow-xl.png")
+                            source(type="image/png" media="(min-width:1280px)" data-srcset="assets/img/office-moscow-lg.png")
+                            source(type="image/png" media="(min-width:768px)"  data-srcset="assets/img/office-moscow-md.png")
+                            img.lazyload(data-src="assets/img/office-moscow.png" alt="")
+                    .offices-item__info
+                        .offices-item__title Московский офис
+                        .offices-item__address Новая площадь, 6
+                        a(href="tel:84991124621").offices-item__tel 8 (499) 112-46-21
+                        .offices-item__way-point Как добраться
+                            
+                .offices-item.offices-item--talin
+                    .offices-item__photo
+                        picture
+                            source(type="image/png" media="(min-width:1920px)" data-srcset="assets/img/office-talin-xl.png")
+                            source(type="image/png" media="(min-width:1280px)" data-srcset="assets/img/office-talin-lg.png")
+                            source(type="image/png" media="(min-width:768px)"  data-srcset="assets/img/office-talin-md.png")
+                            img.lazyload(data-src="assets/img/office-talin.png" alt="")
+                    .offices-item__info
+                        .offices-item__title Таллинский офис
+                        .offices-item__address 3 korrus, Metro Plaza, Viru väljak 2
+                        a(href="tel:+3726104253").offices-item__tel +372 610-42-53
+            

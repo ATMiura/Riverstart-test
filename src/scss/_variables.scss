@@ -1,14 +1,18 @@
 /* Main Colors */
-$color-base: #171717;
+$color-base: #1F2032;
 $color-white: #fff;
 $color-gray: #ccc;
 $color-primary: #E20210;
 $color-secondary: #0E3DB8;
 
-$color-bg: #f8f8f8;
+$color-bg: #1F2032;
 $color-text: $color-base;
 $color-error: $color-primary;
 $color-popup-background: $color-white;
+
+$colo-primary-blue: #312DFF;
+$color-primary-gray: #F7F7FA;
+$color-additional-gray: #9A9AAD;
 
 $color-overlay: $color-base;
 $opacity-overlay: .4;
@@ -20,15 +24,15 @@ $transition-duration: .2s;
 $transition-timing-function: ease-in-out;
 
 $header-z-index: 1000;
-$header-height: (sm: 2rem,
-    md: 3rem,
-    lg: 4rem,
-    xl: 5rem,
+$header-height: (sm: 70px,
+    md: 78px,
+    lg: 77px,
+    xl: 92px,
 );
 // $header-height-fixed: ;
 
 /* Fonts */
-$font-family: 'Fira Sans',
+$font-family: 'Mabry Pro',
 sans-serif;
 $font-family-alt: serif;
 $font-family-icon: "iconfont";
@@ -39,21 +43,25 @@ $letter-spacing: normal;
 $line-height: 1.2;
 
 /* Screen sizes */
-$grid-breakpoints: (sm: 360px,
+$grid-breakpoints: (
+    sm: 360px,
     md: 768px,
     lg: 1280px,
     xl: 1920px);
-$container-max-widths: (sm: 100%,
+$container-max-widths: (
+    sm: 100%,
     md: 100%,
-    lg: 1170px,
-    xl: 1170px);
-$container-paddings: (sm: 25px,
-    md: 50px,
-    lg: 0,
+    lg: 1200px,
+    xl: 1680px);
+$container-paddings: (
+    sm: 30px,
+    md: 40px,
+    lg: 40px,
     xl: 0);
 
 /* block margins */
-$block-margins: (sm: 1rem,
+$block-margins: (
+    sm: 1rem,
     md: 2rem,
     lg: 3rem,
     xl: 4rem,

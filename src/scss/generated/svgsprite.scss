@@ -5,6 +5,10 @@
     fill:currentColor;
     vertical-align:middle;
 
+    &._logo {
+    	font-size:(math.div(17,10))*1rem;
+    	width:(math.div(100,17))*1em;
+    }
     &._track {
     	font-size:(math.div(57,10))*1rem;
     	width:(math.div(86,57))*1em;
